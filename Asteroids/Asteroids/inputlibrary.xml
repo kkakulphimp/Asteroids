@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>inputlibrary</name>
+    </assembly>
+    <members>
+        <member name="T:InputLibrary.InputAbstraction">
+            <summary>
+            Input abstraction class handles controller and keyboard input for game
+            </summary>
+        </member>
+        <member name="P:InputLibrary.InputAbstraction.m_xDir">
+            <summary>
+            X tilt
+            </summary>
+        </member>
+        <member name="P:InputLibrary.InputAbstraction.m_yDir">
+            <summary>
+            Y tilt
+            </summary>
+        </member>
+        <member name="P:InputLibrary.InputAbstraction.m_a">
+            <summary>
+            A button or Z
+            </summary>
+        </member>
+        <member name="P:InputLibrary.InputAbstraction.m_b">
+            <summary>
+            B button or X
+            </summary>
+        </member>
+        <member name="P:InputLibrary.InputAbstraction.m_x">
+            <summary>
+            X button or A
+            </summary>
+        </member>
+        <member name="P:InputLibrary.InputAbstraction.m_y">
+            <summary>
+            Y button or S
+            </summary>
+        </member>
+        <member name="P:InputLibrary.InputAbstraction.m_start">
+            <summary>
+            Start button or P
+            </summary>
+        </member>
+        <member name="F:InputLibrary.InputAbstraction.m_connected">
+            <summary>
+            Returns whether the controller is connected
+            </summary>
+        </member>
+        <member name="M:InputLibrary.InputAbstraction.#ctor(System.Int32)">
+            <summary>
+            Create new input based on player number
+            </summary>
+            <param name="player">Player associated with input</param>
+        </member>
+        <member name="M:InputLibrary.InputAbstraction.Poll(System.Object)">
+            <summary>
+            Input thread to detect controller inputs, will override keyboard inputs
+            </summary>
+            <param name="player"></param>
+        </member>
+        <member name="M:InputLibrary.InputAbstraction.KeyboardDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Handle keyboard down events from outside
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:InputLibrary.InputAbstraction.KeyboardUp(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Handle keyboard up events from outside
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:InputLibrary.InputAbstraction.Close">
+            <summary>
+            Close all instance threads of class
+            </summary>
+        </member>
+    </members>
+</doc>
